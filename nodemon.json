@@ -1,0 +1,5 @@
+{
+  "watch": ["commands.js", "config.js", "lib/handler.js", "lib/main.js", "lib/functions.js"],
+  "ignore": ["sessions", "*.log"],
+  "ext": "js,json"
+}
