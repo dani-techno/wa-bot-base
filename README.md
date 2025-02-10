@@ -25,7 +25,6 @@
 ```bash
 sudo apt-get install nodejs
 sudo apt-get install git
-sudo apt-get install npm
 sudo apt-get install yarn
 ```
 
@@ -33,7 +32,6 @@ sudo apt-get install yarn
 ```bash
 choco install nodejs
 choco install git
-choco install npm
 choco install yarn
 ```
 
@@ -41,7 +39,6 @@ choco install yarn
 ```bash
 brew install node
 brew install git
-brew install npm
 brew install yarn
 ```
 
@@ -49,7 +46,6 @@ brew install yarn
 ```bash
 pkg install nodejs
 pkg install git
-pkg install npm
 pkg install yarn
 ```
 
