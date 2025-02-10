@@ -144,7 +144,7 @@ module.exports = async (command, client, msg, options) => {
     }
 
     case 'total_features': case 'total_fitur': {
-      const totalFeatures = (fs.readFileSync('./handler.js').toString().match(new RegExp('break', 'g')) || []).length - 1;
+      const totalFeatures = (fs.readFileSync('./commands.js').toString().match(new RegExp('break', 'g')) || []).length - 1;
       msg.reply(`Jumlah fitur saat ini: ${totalFeatures}`);
       break;
     }

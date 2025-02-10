@@ -28,6 +28,7 @@
 	"awesome-phonenumber": "^5.10.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   }
 }

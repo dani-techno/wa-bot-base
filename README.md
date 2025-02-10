@@ -68,7 +68,7 @@ Daftar dan dapatkan kunci API:
 ```javascript
 api: {
   ...
-  secret_key: 'Your-API-Key' // Registrasi disini: https://forestapi.web.id
+  secret_key: 'Your-API-Key' // Masukan API Key dari Forest API disini
 }
 ```
 
