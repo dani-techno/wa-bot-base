@@ -23,6 +23,6 @@ module.exports = {
 	bot_name: 'Forest Bot',
 	api: {
 		base_url: 'https://forestapi.web.id',
-		secret_key: 'YOUR_API_KEY'
+		secret_key: 'SECRET_KEY'
 	}
 };
