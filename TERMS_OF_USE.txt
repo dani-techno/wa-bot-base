@@ -1,0 +1,37 @@
+LISENSI DAN HAK CIPTA
+
+Proyek bot WA ini dilindungi oleh lisensi MIT License. Semua kode sumber, desain, dan konten yang terkait dengan proyek ini adalah hak cipta dari Dani Technology.
+
+PENGUNAAN DAN PENYEBARAN
+
+Anda diperbolehkan menggunakan proyek ini untuk keperluan pribadi atau komersial, tetapi Anda harus mematuhi syarat-syarat berikut:
+
+- Anda tidak boleh menjual atau mendistribusikan proyek ini tanpa izin tertulis dari pemilik hak cipta.
+- Anda harus menyertakan semua file lisensi dan hak cipta yang terkait dengan proyek ini.
+- Anda tidak boleh mengubah atau menghapus atribusi hak cipta dari proyek ini.
+
+KONSEKUENSI PELANGGARAN
+
+Jika Anda melanggar syarat-syarat lisensi dan hak cipta ini, maka Anda dapat menghadapi konsekuensi hukum berikut:
+
+- Ganti rugi atas pelanggaran hak cipta sebesar Rp 1.000.000.000 (satu miliar rupiah) atau lebih, sesuai dengan ketentuan Pasal 113 Undang-Undang Hak Cipta No. 28 Tahun 2014.
+- Penghentian penggunaan proyek ini dan semua derivatifnya, sesuai dengan ketentuan Pasal 114 Undang-Undang Hak Cipta No. 28 Tahun 2014.
+- Tindakan hukum lainnya yang sesuai, termasuk tuntutan pidana dan perdata, sesuai dengan ketentuan Pasal 115 Undang-Undang Hak Cipta No. 28 Tahun 2014.
+
+PASAL-PASAL YANG RELEVAN
+
+- Pasal 113 Undang-Undang Hak Cipta No. 28 Tahun 2014 tentang ganti rugi atas pelanggaran hak cipta.
+- Pasal 114 Undang-Undang Hak Cipta No. 28 Tahun 2014 tentang penghentian penggunaan proyek yang melanggar hak cipta.
+- Pasal 115 Undang-Undang Hak Cipta No. 28 Tahun 2014 tentang tindakan hukum lainnya yang sesuai.
+
+Dengan menggunakan proyek ini, Anda menyatakan bahwa Anda telah membaca, memahami, dan menyetujui syarat-syarat lisensi dan hak cipta ini.
+
+KONTAK
+
+Jika Anda memiliki pertanyaan atau kekhawatiran tentang lisensi dan hak cipta ini, silakan hubungi Dani Technology di dani.technology.id@gmail.com.
+
+TERIMA KASIH
+
+Terima kasih atas perhatian Anda.
+
+Dani Ramdani (Dani Technology) - Full Stack Developer & Software Engineer
