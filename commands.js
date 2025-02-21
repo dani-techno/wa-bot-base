@@ -1,26 +1,38 @@
 /**
-- PERINGATAN: PROYEK INI DILINDUNGI OLEH HAK CIPTA DAN LISENSI ISC
-- 
-- Made by: Dani Technology (Full Stack Engineer)
-- Created on: February 10, 2025
-- 
-- KONTAK DEVELOPER:
--     - WhatsApp: +62 838-3499-4479 or +62 823-2066-7363
--     - Email: dani.technology.id@gmail.com
--     - GitHub: https://github.com/dani-techno
-- 
-- PERINGATAN:
--     - Anda tidak boleh mengklaim proyek ini sebagai milik Anda sendiri.
--     - Anda tidak boleh menjual proyek ini tanpa izin tertulis dari pemilik hak cipta.
--     - Anda tidak boleh mengubah atau menghapus atribusi hak cipta dari proyek ini.
-- 
-- KONSEKUENSI PELANGGARAN:
--     - Ganti rugi atas pelanggaran hak cipta sebesar Rp 1.000.000.000 (satu miliar rupiah) atau lebih.
--     - Penghentian penggunaan proyek ini dan semua derivatifnya.
--     - Tindakan hukum lainnya yang sesuai, termasuk tuntutan pidana dan perdata.
-- 
-- DENGAN MENGGUNAKAN PROYEK INI, ANDA MENYATAKAN BAHWA ANDA TELAH MEMBACA, MEMAHAMI, DAN MENYETUJUI SYARAT-SYARAT LISENSI DAN HAK CIPTA INI.
-*/
+Proyek ini dilindungi oleh hak cipta dan lisensi ISC. Pengembangan proyek ini dilakukan oleh Dani Technology (Full Stack Developer & Software Engineer) pada tanggal 21 Februari 2025. Perlu diingat bahwa pelanggaran hak cipta dapat mengakibatkan konsekuensi hukum yang serius, termasuk ganti rugi dan tindakan hukum lainnya. Oleh karena itu, kami berharap Anda untuk menghormati hak cipta kami dan tidak melakukan tindakan yang dapat melanggar hak cipta ini.
+
+KONTAK DEVELOPER:
+
+- WhatsApp: +62 838-3499-4479 atau +62 823-2066-7363
+- Email: dani.technology.id@gmail.com
+- GitHub: @dani-techno
+
+SYARAT-SYARAT LISENSI:
+
+- Anda tidak diperbolehkan mengklaim proyek ini sebagai milik Anda sendiri.
+- Anda tidak diperbolehkan menjual proyek ini tanpa izin tertulis dari pemilik hak cipta.
+- Anda tidak diperbolehkan mengubah atau menghapus atribusi hak cipta dari proyek ini.
+
+KONSEKUENSI PELANGGARAN
+
+Jika Anda melanggar syarat-syarat lisensi ini, maka Anda dapat menghadapi konsekuensi hukum berikut:
+
+- Ganti rugi atas pelanggaran hak cipta sebesar Rp 1.000.000.000 (satu miliar rupiah) atau lebih, sesuai dengan ketentuan Pasal 113 Undang-Undang Hak Cipta No. 28 Tahun 2014.
+- Penghentian penggunaan proyek ini dan semua derivatifnya, sesuai dengan ketentuan Pasal 114 Undang-Undang Hak Cipta No. 28 Tahun 2014.
+- Tindakan hukum lainnya yang sesuai, termasuk tuntutan pidana dan perdata, sesuai dengan ketentuan Pasal 115 Undang-Undang Hak Cipta No. 28 Tahun 2014.
+
+PASAL-PASAL YANG RELEVAN
+
+- Pasal 113 Undang-Undang Hak Cipta No. 28 Tahun 2014 tentang ganti rugi atas pelanggaran hak cipta.
+- Pasal 114 Undang-Undang Hak Cipta No. 28 Tahun 2014 tentang penghentian penggunaan proyek yang melanggar hak cipta.
+- Pasal 115 Undang-Undang Hak Cipta No. 28 Tahun 2014 tentang tindakan hukum lainnya yang sesuai.
+
+DENGAN MENGGUNAKAN PROYEK INI, ANDA MENYATAKAN BAHWA ANDA TELAH MEMBACA, MEMAHAMI, DAN MENYETUJUI SYARAT-SYARAT LISENSI DAN HAK CIPTA INI.
+
+PERINGATAN AKHIR:
+
+Dengan ini, kami memberikan peringatan bahwa pelanggaran hak cipta atas proyek ini akan diambil tindakan hukum yang serius. Jika Anda terbukti menjual atau mengklaim proyek ini sebagai milik Anda sendiri tanpa izin, kami akan mengambil langkah-langkah hukum yang diperlukan untuk melindungi hak cipta kami, termasuk ganti rugi dan tindakan hukum lainnya.
+**/
 
 const fs = require('fs');
 const axios = require('axios');
@@ -96,13 +108,15 @@ module.exports = async (command, client, msg, options) => {
 
   switch (command) {
     case 'menu':
-    case 'menu_list': 
+    case 'menu_list':
     case 'all_menu': {
       const menu = `*\`Hai ${senderName}\`*
             
 \`Menu\`
 - ${prefix}total_features
 - ${prefix}whoami
+- ${prefix}test
+- ${prefix}start
 - ${prefix}text
 - ${prefix}temporary_msg [text, milliseconds]
 - ${prefix}image
@@ -140,25 +154,26 @@ module.exports = async (command, client, msg, options) => {
       msg.reply(menu);
       break;
     }
-    
+
     case 'self':
     case 'public': {
       if (!(isOwner || isMe)) {
         return msg.reply('❌ Kamu tidak memiliki izin untuk menggunakan fitur ini.');
       }
-      
+
       client.public = command;
-      
+
       msg.reply(`Mode ${command.toUpperCase()} telah diaktifkan.`);
       break;
     };
-    
+
     case 'test': {
       msg.reply('Ok, Success!');
       break;
     }
 
-    case 'total_features': case 'total_fitur': {
+    case 'total_features':
+    case 'total_fitur': {
       const totalFeatures = (fs.readFileSync('./commands.js').toString().match(new RegExp('break', 'g')) || []).length - 1;
       msg.reply(`Jumlah fitur saat ini: ${totalFeatures}`);
       break;
@@ -183,8 +198,8 @@ module.exports = async (command, client, msg, options) => {
     case 'text': {
       const options = {
         text: `Hai @${senderNumber}`,
-        mentions: [`${senderNumber}@s.whatsapp.net`]
-        //contextInfo: { forwardingScore: 2, isForwarded: false }
+        mentions: [`${senderNumber}@s.whatsapp.net`],
+        //contextInfo: { forwardingScore: 2, isForwarded: true }
       };
 
       await sendMessage(options);
@@ -200,8 +215,8 @@ module.exports = async (command, client, msg, options) => {
 
       const options = {
         text: text,
-        mentions: [`${text.split('@')[1]}@s.whatsapp.net`]
-        //contextInfo: { forwardingScore: 2, isForwarded: false }
+        mentions: [`${text.split('@')[1]}@s.whatsapp.net`],
+        //contextInfo: { forwardingScore: 2, isForwarded: true }
       };
 
       await sendTemporaryMessage(options, 5000);
@@ -354,10 +369,42 @@ module.exports = async (command, client, msg, options) => {
       break;
     };
 
-    case 'reaction': case 'react': {
+    case 'reaction':
+    case 'react': {
       await sendReaction('💖');
       break;
     };
+
+    /* Start area */
+    case 'start': {
+      /*const [text] = parameters();
+
+      if (!text) {
+        return msg.reply(`Example: ${prefix}${command} Hi`);
+      }*/
+
+      try {
+        await sendReaction(config.reactions.process);
+
+        const options = {
+          text: `Hai ${senderName} - @${senderNumber}. Aku adalah ${botName}`,
+          mentions: [`${senderNumber}@s.whatsapp.net`],
+          //contextInfo: { forwardingScore: 2, isForwarded: true }
+        };
+
+        await sendMessage(options).then(async () => {
+          await sendReaction(config.reactions.success);
+        });
+
+      } catch (error) {
+        await sendReaction(config.reactions.failed);
+        msg.reply(`Error: ${error.message}`);
+        console.error(error);
+      };
+
+      break;
+    };
+    /* End Start area */
 
     default: {
       msg.reply('Perintah tidak dikenali. Gunakan .menu untuk melihat daftar perintah.');
