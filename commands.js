@@ -75,22 +75,26 @@ module.exports = async (command, client, msg, options) => {
     });
   };
 
+  async function deleteMessage(id) {
+    return await client.sendMessage(jid, {
+      delete: {
+        remoteJid: jid,
+        fromMe: true,
+        id: id
+      }
+    });
+  };
+
   async function sendTemporaryMessage(options, countdown) {
 
     await client.sendMessage(jid, options, {
       quoted: msg
     }).then(sentMessage => {
 
-      const messageId = sentMessage.key.id;
+      const msgId = sentMessage.key.id;
 
       setTimeout(() => {
-        client.sendMessage(jid, {
-          delete: {
-            remoteJid: jid,
-            fromMe: true,
-            id: messageId
-          },
-        });
+        deleteMessage(msgId);
       }, countdown);
     });
   };
