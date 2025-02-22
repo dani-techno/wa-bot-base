@@ -68,7 +68,7 @@ Daftar dan dapatkan kunci API:
 ```javascript
 api: {
   ...
-  secret_key: 'Your-API-Key' // Masukan API Key dari Forest API disini
+  secret_key: 'Your-API-Key' // Masukan API Key dari ForestAPI disini
 }
 ```
 
@@ -120,10 +120,10 @@ nodemon run start
 ```
 
 ## Informasi
-* Pembuat / Pengembang: Dani Technology - Full Stack Engineer
+* Pembuat / Pengembang: Dani Technology - Full Stack Developer & Software Engineer
 * Kontak Pembuat / Pengembang: +62 838-3499-4479 or +62 823-2066-7363 (WhatsApp), dani.technology.id@gmail.com (Email)
 
 ## Terimakasih Kepada
-* Dani Technology - Full Stack Engineer (Pembuat / Pengembang)
-* Forest API | <a href="https://forestapi.web.id">forestapi.web.id</a> (Penyedia API)
+* Dani Technology - Full Stack Developer & Software Engineer (Pembuat / Pengembang)
+* ForestAPI | <a href="https://forestapi.web.id">forestapi.web.id</a> (Penyedia API)
 * @whiskeysockets/baileys (Penyedia Library "Baileys")
