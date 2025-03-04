@@ -125,5 +125,5 @@ nodemon run start
 
 ## Terimakasih Kepada
 * Dani Technology - Full Stack Developer & Software Engineer (Pembuat / Pengembang)
-* ForestAPI | <a href="https://forestapi.web.id">forestapi.web.id</a> (Penyedia API Payment Gateway)
+* ForestAPI | <a href="https://forestapi.web.id">forestapi.web.id</a> (Penyedia API)
 * @whiskeysockets/baileys (Penyedia Library "Baileys")
